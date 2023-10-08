@@ -6,6 +6,12 @@ public class ZalobceRuntime
     {
         ParseCSV pcsv = new ParseCSV();
         List<Zalobnicek> sortedListZ = pcsv.CsvToList("csv/naklady_zastoupeni.csv").OrderBy(z => z.Castka).ToList();
-        Console.WriteLine(sortedListZ[sortedListZ.Count - 1].Castka);
+        // Console.WriteLine(sortedListZ[sortedListZ.Count - 1].Castka);
+        List<Zalobnicek> groupedList = new List<Zalobnicek>();
+        foreach (Zalobnicek z in sortedListZ)
+        {
+            
+        }
+        
     }
 }

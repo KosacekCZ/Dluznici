@@ -1,5 +1,5 @@
 public class Zalobnicek {
-  public string JmenoZalobce {get; private set;} = "";
+  public string JmenoZalobce {get; internal set;} = "";
   public int Rok {get; private set;}
   public double Castka { get; private set; }
 
@@ -9,4 +9,6 @@ public class Zalobnicek {
     this.Rok = Rok;
     this.Castka = Castka;
   }
+  
+  
 }
